@@ -135,8 +135,7 @@ p { margin-bottom: 1.5rem; font-size: 1.1rem; }
     border-radius: 4px;
     padding: 1.5rem;
     border: 1px solid var(--surface-border);
-    flex: 1;
-    overflow-y: auto;
+    min-height: 120px;
 }
 
 .token-display {
