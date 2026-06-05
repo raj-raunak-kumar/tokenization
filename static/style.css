@@ -119,14 +119,14 @@ p { margin-bottom: 1.5rem; font-size: 1.1rem; }
     background: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 4px;
     font-family: var(--font-mono);
-    font-size: 1.2rem;
+    font-size: 1rem;
     outline: none;
     resize: vertical;
     transition: all 0.2s;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .interactive-input:focus { border-color: var(--primary); box-shadow: 0 0 15px rgba(139, 92, 246, 0.3); }
 
@@ -143,12 +143,12 @@ p { margin-bottom: 1.5rem; font-size: 1.1rem; }
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    line-height: 2.5;
+    line-height: 1.8;
 }
 
 .token-block {
     font-family: var(--font-mono);
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.1rem 0rem;
     position: relative;
     cursor: crosshair;
