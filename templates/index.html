@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Zero to Hero: How AI Reads Text</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <main class="container">
+        <header>
+            <h1>Tokenization Analysis Visualizer</h1>
+            <p class="subtitle">An interactive architectural breakdown of Large Language Model text processing.</p>
+        </header>
+
+        <div class="dashboard-layout">
+            <aside class="sidebar-missions">
+                <h2>Missions</h2>
+                <div class="mission-list">
+                    <div class="mission-card" data-mission="0">
+                    <div class="mission-level">Level 0</div>
+                    <h3>The Basics</h3>
+                    <p>What is a token anyway?</p>
+                </div>
+                <div class="mission-card" data-mission="1">
+                    <div class="mission-level">Level 1</div>
+                    <h3>The Spelling Illusion</h3>
+                    <p>Why AI can't count letters.</p>
+                </div>
+                <div class="mission-card" data-mission="2">
+                    <div class="mission-level">Level 2</div>
+                    <h3>The Space Case</h3>
+                    <p>Why spaces ruin your prompts.</p>
+                </div>
+                <div class="mission-card" data-mission="3">
+                    <div class="mission-level">Level 3</div>
+                    <h3>The Capitalization Trap</h3>
+                    <p>Why yelling makes AI dumber.</p>
+                </div>
+                <div class="mission-card" data-mission="4">
+                    <div class="mission-level">Level 4</div>
+                    <h3>The Math Mystery</h3>
+                    <p>Why AI fails at arithmetic.</p>
+                </div>
+                <div class="mission-card" data-mission="5">
+                    <div class="mission-level">Level 5</div>
+                    <h3>The Punctuation Penalty</h3>
+                    <p>Hyphens vs Underscores.</p>
+                </div>
+                <div class="mission-card" data-mission="6">
+                    <div class="mission-level">Level 6</div>
+                    <h3>The Emoji Enigma</h3>
+                    <p>How AI sees unicode.</p>
+                </div>
+                <div class="mission-card" data-mission="7">
+                    <div class="mission-level">Level 7</div>
+                    <h3>The Formatting Trick</h3>
+                    <p>How to structure prompts.</p>
+                </div>
+                <div class="mission-card" data-mission="8">
+                    <div class="mission-level">Level 8</div>
+                    <h3>The Typo Tax</h3>
+                    <p>How misspellings destroy logic.</p>
+                </div>
+                <div class="mission-card" data-mission="9">
+                    <div class="mission-level">Level 9</div>
+                    <h3>The Language Tax</h3>
+                    <p>The hidden bias of AI cost.</p>
+                </div>
+                <div class="mission-card boss-card" data-mission="10">
+                    <div class="mission-level">🏆 Boss Level</div>
+                    <h3>The 10/6 Puzzle</h3>
+                    <p>Only 5 words exist.</p>
+                </div>
+                <div class="mission-card boss-card bonus" data-mission="11">
+                    <div class="mission-level">🏆 Bonus Level</div>
+                    <h3>Linguistics Pro</h3>
+                    <p>Morphological challenge.</p>
+                </div>
+            </div>
+        </section>    </aside>
+
+            <section class="main-content">
+                <div class="playground glass-panel">
+                    <div class="playground-header">
+                        <h2>Interactive Visualizer</h2>
+                        <div class="stats">
+                            Total Tokens: <span id="token-count">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <textarea id="text-input" class="interactive-input" placeholder="Type anything to see how it's tokenized..." rows="3">A token can be a whole word, a syllable, or a single letter.</textarea>
+                    </div>
+
+                    <div class="output-container">
+                        <h3>AI Vision (Tokens)</h3>
+                        <div id="token-display" class="token-display">
+                            <!-- Tokens will be injected here -->
+                        </div>
+                    </div>
+
+                    <div id="insight-panel" class="insight-panel hidden">
+                        <h3 id="insight-title">💡 Insight</h3>
+                        <p id="insight-text">Select a mission above to load an experiment.</p>
+                        <div class="prompt-tip">
+                            <strong id="tip-label">🎓 Pro Tip:</strong> <span id="insight-tip">Modify the text input to observe token boundaries.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Architected by Raj Raunak Kumar (PhD Student) • IEEE CVPR</p>
+        </footer>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
