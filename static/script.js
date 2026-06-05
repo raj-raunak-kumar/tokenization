@@ -207,6 +207,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Trigger Fetch
             fetchTokens(mission.text);
+            
+            // Mobile smooth scroll to visualizer
+            if (window.innerWidth <= 768) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         });
     });
 
